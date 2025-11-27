@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Webico - Professional web and mobile development for growing businesses. Affordable pricing, real results.">
+  <title>Webico - We Build Websites That Work</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-content">
+      <a href="#" class="logo">
+        <img src="assets/logo.png" alt="Webico" class="logo-img">
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav-link" data-i18n="nav.home">Home</a>
+        <a href="#services" class="nav-link" data-i18n="nav.services">Services</a>
+        <a href="#portfolio" class="nav-link" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+        <a href="#faq" class="nav-link" data-i18n="nav.faq">FAQ</a>
+        <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+          <span class="lang-current">EN</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1 class="hero-headline" data-i18n="hero.headline">We Build Websites That Work</h1>
+          <p class="hero-subheadline" data-i18n="hero.subheadline">Professional web and mobile solutions for growing businesses. Affordable pricing, real results.</p>
+          <a href="#contact" class="btn btn-primary" data-i18n="hero.cta">Get a Free Quote</a>
+        </div>
+        <div class="hero-image">
+          <img src="assets/hero-devices.png" alt="Web and mobile development" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="section-title" data-i18n="services.headline">What We Do</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                <path d="M8 21h8M12 17v4"/>
+              </svg>
+            </div>
+            <h3 class="service-title" data-i18n="services.web_title">Website Development</h3>
+            <p class="service-desc" data-i18n="services.web_desc">Custom websites that look great and work perfectly. Mobile-friendly, fast, easy to update.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="5" y="2" width="14" height="20" rx="2"/>
+                <path d="M12 18h.01"/>
+              </svg>
+            </div>
+            <h3 class="service-title" data-i18n="services.mobile_title">Mobile Apps</h3>
+            <p class="service-desc" data-i18n="services.mobile_desc">iOS and Android applications. User-friendly design, reliable performance.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5"/>
+                <path d="M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3 class="service-title" data-i18n="services.webapp_title">Web Applications</h3>
+            <p class="service-desc" data-i18n="services.webapp_desc">Custom business tools and dashboards. Built for your specific needs.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2a4 4 0 0 1 4 4c0 1.5-.8 2.8-2 3.4V11h3a3 3 0 0 1 3 3v1"/>
+                <path d="M8 9.4A4 4 0 1 1 12 2"/>
+                <path d="M12 11v11"/>
+                <path d="M8 17h8"/>
+              </svg>
+            </div>
+            <h3 class="service-title" data-i18n="services.ai_title">AI Integration & Consulting</h3>
+            <p class="service-desc" data-i18n="services.ai_desc">Add AI capabilities to your systems. Practical solutions that save time and money.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us" id="why-us">
+      <div class="container">
+        <h2 class="section-title" data-i18n="whyus.headline">Why Work With Us</h2>
+        <div class="why-us-grid">
+          <div class="why-us-card">
+            <div class="why-us-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <h3 class="why-us-title" data-i18n="whyus.exp_title">15+ Years Experience</h3>
+            <p class="why-us-desc" data-i18n="whyus.exp_desc">Delivering quality solutions since 2009.</p>
+          </div>
+          <div class="why-us-card">
+            <div class="why-us-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+            <h3 class="why-us-title" data-i18n="whyus.price_title">Affordable Pricing</h3>
+            <p class="why-us-desc" data-i18n="whyus.price_desc">Professional work at fair prices. Free quotes, no hidden costs.</p>
+          </div>
+          <div class="why-us-card">
+            <div class="why-us-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <h3 class="why-us-title" data-i18n="whyus.global_title">Canadian & Mongolian Expertise</h3>
+            <p class="why-us-desc" data-i18n="whyus.global_desc">Working across two markets. We understand local business needs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Section -->
+    <section class="ai-section">
+      <div class="container">
+        <div class="ai-content">
+          <div class="ai-image">
+            <img src="assets/hero-illustration.png" alt="AI Solutions" loading="lazy">
+          </div>
+          <div class="ai-text">
+            <h2 class="section-title" data-i18n="ai.headline">AI That Actually Helps Your Business</h2>
+            <p class="ai-desc" data-i18n="ai.desc">AI isn't just for big companies. We help small businesses use AI to automate tasks, improve customer service, and make smarter decisions. Whether it's chatbots, data analysis, or custom automation, we build practical AI solutions that save you time and money.</p>
+            <a href="#contact" class="btn btn-secondary" data-i18n="ai.cta">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="section-title" data-i18n="portfolio.headline">Our Work</h2>
+        <div class="portfolio-grid">
+          <a href="https://solutioninitiatives.com/" target="_blank" class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="assets/portfolio/solution_initiatives.png" alt="Solution Initiatives" loading="lazy">
+            </div>
+            <h3 class="portfolio-title" data-i18n="portfolio.p1_title">Solution Initiatives</h3>
+            <p class="portfolio-desc" data-i18n="portfolio.p1_desc">Renewable Energy · WordPress</p>
+          </a>
+          <a href="https://crd.mn/" target="_blank" class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="assets/portfolio/clean_resource_development.png" alt="Clean Resource Development" loading="lazy">
+            </div>
+            <h3 class="portfolio-title" data-i18n="portfolio.p2_title">Clean Resource Development</h3>
+            <p class="portfolio-desc" data-i18n="portfolio.p2_desc">Renewable Energy · WordPress</p>
+          </a>
+          <a href="https://mbr.mn/" target="_blank" class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="assets/portfolio/m_bureau.png" alt="M Bureau" loading="lazy">
+            </div>
+            <h3 class="portfolio-title" data-i18n="portfolio.p3_title">M Bureau</h3>
+            <p class="portfolio-desc" data-i18n="portfolio.p3_desc">Event Marketing · WordPress</p>
+          </a>
+          <a href="https://bigmongoliatravel.com/" target="_blank" class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="assets/portfolio/big_mongolia_travel.png" alt="Big Mongolia Travel" loading="lazy">
+            </div>
+            <h3 class="portfolio-title" data-i18n="portfolio.p4_title">Big Mongolia Travel</h3>
+            <p class="portfolio-desc" data-i18n="portfolio.p4_desc">Travel & Tours · WordPress</p>
+          </a>
+          <a href="https://deine-mongolei.de/" target="_blank" class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="assets/portfolio/deine_mongolei.png" alt="Deine Mongolei" loading="lazy">
+            </div>
+            <h3 class="portfolio-title" data-i18n="portfolio.p5_title">Deine Mongolei</h3>
+            <p class="portfolio-desc" data-i18n="portfolio.p5_desc">Travel & Culture · WordPress</p>
+          </a>
+          <a href="https://onimarketing.com/" target="_blank" class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="assets/portfolio/oni_marketing.png" alt="Oni Marketing" loading="lazy">
+            </div>
+            <h3 class="portfolio-title" data-i18n="portfolio.p6_title">Oni Marketing</h3>
+            <p class="portfolio-desc" data-i18n="portfolio.p6_desc">Digital Marketing · WordPress</p>
+          </a>
+          <a href="https://shvlamtarot.com/" target="_blank" class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="assets/portfolio/shvlam_tarot.jpg" alt="Shvlam Tarot" loading="lazy">
+            </div>
+            <h3 class="portfolio-title" data-i18n="portfolio.p7_title">Shvlam Tarot</h3>
+            <p class="portfolio-desc" data-i18n="portfolio.p7_desc">E-commerce · Flask & Python</p>
+          </a>
+          <a href="https://sonosahius.com/" target="_blank" class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="assets/portfolio/sono_sahius.png" alt="Sono Sahius" loading="lazy">
+            </div>
+            <h3 class="portfolio-title" data-i18n="portfolio.p8_title">Sono Sahius</h3>
+            <p class="portfolio-desc" data-i18n="portfolio.p8_desc">Digital Products · Flask & Python</p>
+          </a>
+          <a href="https://sabrina.invictamotus.com/" target="_blank" class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="assets/portfolio/sabrina_beauty.png" alt="Sabrina Beauty" loading="lazy">
+            </div>
+            <h3 class="portfolio-title" data-i18n="portfolio.p9_title">Sabrina Beauty</h3>
+            <p class="portfolio-desc" data-i18n="portfolio.p9_desc">Beauty & E-Commerce · Flask</p>
+          </a>
+          <a href="https://modun.ca/" target="_blank" class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="assets/portfolio/modun_logo.png" alt="Modun Construction" loading="lazy">
+            </div>
+            <h3 class="portfolio-title" data-i18n="portfolio.p10_title">Modun Construction</h3>
+            <p class="portfolio-desc" data-i18n="portfolio.p10_desc">Landscaping · React & TypeScript</p>
+          </a>
+          <a href="https://jipconstruction.ca/" target="_blank" class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="assets/portfolio/jip_logo.png" alt="Just In Place Construction" loading="lazy">
+            </div>
+            <h3 class="portfolio-title" data-i18n="portfolio.p11_title">Just In Place Construction</h3>
+            <p class="portfolio-desc" data-i18n="portfolio.p11_desc">Construction · React & TypeScript</p>
+          </a>
+          <a href="https://galaaluminumwindows.ca/" target="_blank" class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="assets/portfolio/gala_logo.png" alt="Gala Aluminum Windows" loading="lazy">
+            </div>
+            <h3 class="portfolio-title" data-i18n="portfolio.p12_title">Gala Aluminum Windows</h3>
+            <p class="portfolio-desc" data-i18n="portfolio.p12_desc">Construction · React & TypeScript</p>
+          </a>
+          <a href="https://rehab.invictamotus.com/" target="_blank" class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="assets/portfolio/rehab_logo.png" alt="REHAB Rehabilitation Center" loading="lazy">
+            </div>
+            <h3 class="portfolio-title" data-i18n="portfolio.p13_title">REHAB Center</h3>
+            <p class="portfolio-desc" data-i18n="portfolio.p13_desc">Healthcare · Next.js & TypeScript</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+      <div class="container">
+        <h2 class="section-title" data-i18n="process.headline">How We Work</h2>
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <h3 class="step-title" data-i18n="process.step1_title">Consultation</h3>
+            <p class="step-desc" data-i18n="process.step1_desc">We discuss your needs and goals</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <h3 class="step-title" data-i18n="process.step2_title">Design</h3>
+            <p class="step-desc" data-i18n="process.step2_desc">You review and approve the design</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <h3 class="step-title" data-i18n="process.step3_title">Development</h3>
+            <p class="step-desc" data-i18n="process.step3_desc">We build your solution</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <h3 class="step-title" data-i18n="process.step4_title">Launch</h3>
+            <p class="step-desc" data-i18n="process.step4_desc">We deliver and provide training</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2 class="section-title" data-i18n="faq.headline">Common Questions</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" data-i18n="faq.q1">How much does a website cost?</button>
+            <div class="faq-answer">
+              <p data-i18n="faq.a1">It depends on what you need. A basic business website starts around $2,000-$5,000. Custom applications cost more. Contact us for a specific quote.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" data-i18n="faq.q2">How long does it take?</button>
+            <div class="faq-answer">
+              <p data-i18n="faq.a2">Most websites take 2-4 weeks. Apps and custom systems take longer depending on complexity.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" data-i18n="faq.q3">What if I only have a small budget?</button>
+            <div class="faq-answer">
+              <p data-i18n="faq.a3">We work with all budget sizes. Tell us what you can spend, and we'll tell you what's possible.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" data-i18n="faq.q4">Can I update the website myself?</button>
+            <div class="faq-answer">
+              <p data-i18n="faq.a4">Yes. We build sites that are easy to update, and we provide training.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" data-i18n="faq.q5">Do you provide training?</button>
+            <div class="faq-answer">
+              <p data-i18n="faq.a5">Yes, we show you how to use and update your site.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" data-i18n="faq.q6">What happens after the website is live?</button>
+            <div class="faq-answer">
+              <p data-i18n="faq.a6">We provide support and can handle updates for you. We don't disappear after launch.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" data-i18n="faq.q7">Do you only work with Mongolian businesses?</button>
+            <div class="faq-answer">
+              <p data-i18n="faq.a7">No, we work with clients in Canada and Mongolia.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" data-i18n="faq.q8">What technologies do you use?</button>
+            <div class="faq-answer">
+              <p data-i18n="faq.a8">We use modern, reliable technology - React, cloud services, and proven frameworks. We choose what's best for your project.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title" data-i18n="about.headline">About Us</h2>
+        <p class="about-text" data-i18n="about.desc">We're a software development team with over 15 years of experience building websites and applications. We work with small businesses in Mongolia and Canada, delivering solutions that actually work. No corporate nonsense, no overpriced packages - just solid development at fair prices. Based in Canada, working with Mongolia.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title" data-i18n="contact.headline">Get a Free Quote</h2>
+        <div class="contact-content">
+          <form class="contact-form" id="contactForm">
+            <!-- Step 1: Contact Info -->
+            <div class="form-step" id="step1">
+              <div class="step-header">1. <span data-i18n="contact.step1_title">Contact Information</span></div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name" data-i18n="contact.name">Name *</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email" data-i18n="contact.email">Email *</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone" data-i18n="contact.phone">Phone/WhatsApp *</label>
+                  <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                  <label for="business" data-i18n="contact.business">Business Name</label>
+                  <input type="text" id="business" name="business">
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 2: Project Type -->
+            <div class="form-step" id="step2">
+              <div class="step-header">2. <span data-i18n="contact.step2_title">Project Type</span></div>
+              <div class="form-group">
+                <label data-i18n="contact.project_type_label">What type of project do you need? *</label>
+                <div class="radio-group project-type-group">
+                  <label class="radio-card">
+                    <input type="radio" name="projectType" value="website" required>
+                    <span class="radio-card-content">
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                      <span data-i18n="contact.type_website">Website</span>
+                    </span>
+                  </label>
+                  <label class="radio-card">
+                    <input type="radio" name="projectType" value="mobile">
+                    <span class="radio-card-content">
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                      <span data-i18n="contact.type_mobile">Mobile App</span>
+                    </span>
+                  </label>
+                  <label class="radio-card">
+                    <input type="radio" name="projectType" value="webapp">
+                    <span class="radio-card-content">
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 8h2m4 0h4"/><path d="M7 12h10"/></svg>
+                      <span data-i18n="contact.type_webapp">Web Application</span>
+                    </span>
+                  </label>
+                  <label class="radio-card">
+                    <input type="radio" name="projectType" value="ecommerce">
+                    <span class="radio-card-content">
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                      <span data-i18n="contact.type_ecommerce">E-commerce</span>
+                    </span>
+                  </label>
+                  <label class="radio-card">
+                    <input type="radio" name="projectType" value="ai">
+                    <span class="radio-card-content">
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"/><path d="M16 15a4 4 0 0 1 4 4v2H4v-2a4 4 0 0 1 4-4h8z"/><circle cx="12" cy="10" r="1"/></svg>
+                      <span data-i18n="contact.type_ai">AI Integration</span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3: Dynamic Project Details -->
+            <div class="form-step" id="step3">
+              <div class="step-header">3. <span data-i18n="contact.step3_title">Project Details</span></div>
+
+              <!-- Website Options -->
+              <div class="dynamic-section" id="websiteOptions">
+                <div class="form-group">
+                  <label data-i18n="contact.website_pages">Number of pages</label>
+                  <select name="websitePages">
+                    <option value="" data-i18n="contact.select_option">Select an option</option>
+                    <option value="1-5" data-i18n="contact.pages_1_5">1-5 pages</option>
+                    <option value="6-10" data-i18n="contact.pages_6_10">6-10 pages</option>
+                    <option value="11-20" data-i18n="contact.pages_11_20">11-20 pages</option>
+                    <option value="20+" data-i18n="contact.pages_20_plus">20+ pages</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label data-i18n="contact.website_design">Design preference</label>
+                  <select name="websiteDesign">
+                    <option value="" data-i18n="contact.select_option">Select an option</option>
+                    <option value="template" data-i18n="contact.design_template">Template-based</option>
+                    <option value="custom" data-i18n="contact.design_custom">Custom design</option>
+                    <option value="ready" data-i18n="contact.design_ready">I have designs ready</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label data-i18n="contact.website_features">Features needed</label>
+                  <div class="checkbox-group">
+                    <label class="checkbox-label"><input type="checkbox" name="websiteFeatures" value="multilang"><span data-i18n="contact.feature_multilang">Multi-language</span></label>
+                    <label class="checkbox-label"><input type="checkbox" name="websiteFeatures" value="blog"><span data-i18n="contact.feature_blog">Blog</span></label>
+                    <label class="checkbox-label"><input type="checkbox" name="websiteFeatures" value="forms"><span data-i18n="contact.feature_forms">Contact forms</span></label>
+                    <label class="checkbox-label"><input type="checkbox" name="websiteFeatures" value="booking"><span data-i18n="contact.feature_booking">Booking system</span></label>
+                    <label class="checkbox-label"><input type="checkbox" name="websiteFeatures" value="accounts"><span data-i18n="contact.feature_accounts">User accounts</span></label>
+                    <label class="checkbox-label"><input type="checkbox" name="websiteFeatures" value="seo"><span data-i18n="contact.feature_seo">SEO optimization</span></label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label data-i18n="contact.content_ready">Content ready?</label>
+                  <select name="websiteContent">
+                    <option value="" data-i18n="contact.select_option">Select an option</option>
+                    <option value="yes" data-i18n="contact.content_yes">Yes, content is ready</option>
+                    <option value="need-help" data-i18n="contact.content_need_help">Need copywriting help</option>
+                    <option value="not-sure" data-i18n="contact.content_not_sure">Not sure yet</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Mobile App Options -->
+              <div class="dynamic-section" id="mobileOptions">
+                <div class="form-group">
+                  <label data-i18n="contact.mobile_platform">Platform</label>
+                  <select name="mobilePlatform">
+                    <option value="" data-i18n="contact.select_option">Select an option</option>
+                    <option value="ios" data-i18n="contact.platform_ios">iOS only</option>
+                    <option value="android" data-i18n="contact.platform_android">Android only</option>
+                    <option value="both" data-i18n="contact.platform_both">Both iOS & Android</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label data-i18n="contact.mobile_design">Design preference</label>
+                  <select name="mobileDesign">
+                    <option value="" data-i18n="contact.select_option">Select an option</option>
+                    <option value="standard" data-i18n="contact.design_standard">Standard UI</option>
+                    <option value="custom" data-i18n="contact.design_custom">Custom design</option>
+                    <option value="ready" data-i18n="contact.design_ready">I have designs ready</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label data-i18n="contact.mobile_features">Features needed</label>
+                  <div class="checkbox-group">
+                    <label class="checkbox-label"><input type="checkbox" name="mobileFeatures" value="accounts"><span data-i18n="contact.feature_accounts">User accounts/login</span></label>
+                    <label class="checkbox-label"><input type="checkbox" name="mobileFeatures" value="push"><span data-i18n="contact.feature_push">Push notifications</span></label>
+                    <label class="checkbox-label"><input type="checkbox" name="mobileFeatures" value="offline"><span data-i18n="contact.feature_offline">Offline mode</span></label>
+                    <label class="checkbox-label"><input type="checkbox" name="mobileFeatures" value="payments"><span data-i18n="contact.feature_payments">In-app payments</span></label>
+                    <label class="checkbox-label"><input type="checkbox" name="mobileFeatures" value="location"><span data-i18n="contact.feature_location">Location/GPS</span></label>
+                    <label class="checkbox-label"><input type="checkbox" name="mobileFeatures" value="camera"><span data-i18n="contact.feature_camera">Camera/media</span></label>
+                    <label class="checkbox-label"><input type="checkbox" name="mobileFeatures" value="chat"><span data-i18n="contact.feature_chat">Chat/messaging</span></label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label data-i18n="contact.mobile_backend">Backend needed?</label>
+                  <select name="mobileBackend">
+                    <option value="" data-i18n="contact.select_option">Select an option</option>
+                    <option value="yes" data-i18n="contact.backend_yes">Yes, need server/database</option>
+                    <option value="no" data-i18n="contact.backend_no">No, standalone app</option>
+                    <option value="not-sure" data-i18n="contact.backend_not_sure">Not sure</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Web Application Options -->
+              <div class="dynamic-section" id="webappOptions">
+                <div class="form-group">
+                  <label data-i18n="contact.webapp_type">Application type</label>
+                  <select name="webappType">
+                    <option value="" data-i18n="contact.select_option">Select an option</option>
+                    <option value="dashboard" data-i18n="contact.webapp_dashboard">Dashboard/Admin panel</option>
+                    <option value="portal" data-i18n="contact.webapp_portal">Customer portal</option>
+                    <option value="internal" data-i18n="contact.webapp_internal">Internal tool</option>
+                    <option value="saas" data-i18n="contact.webapp_saas">SaaS product</option>
+                    <option value="other" data-i18n="contact.webapp_other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label data-i18n="contact.webapp_users">Expected users</label>
+                  <select name="webappUsers">
+                    <option value="" data-i18n="contact.select_option">Select an option</option>
+                    <option value="small" data-i18n="contact.users_small">Just me/team</option>
+                    <option value="medium" data-i18n="contact.users_medium">Under 100 users</option>
+                    <option value="large" data-i18n="contact.users_large">100-1000 users</option>
+                    <option value="xlarge" data-i18n="contact.users_xlarge">1000+ users</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label data-i18n="contact.webapp_features">Features needed</label>
+                  <div class="checkbox-group">
+                    <label class="checkbox-label"><input type="checkbox" name="webappFeatures" value="roles"><span data-i18n="contact.feature_roles">User roles/permissions</span></label>
+                    <label class="checkbox-label"><input type="checkbox" name="webappFeatures" value="import"><span data-i18n="contact.feature_import">Data import/export</span></label>
+                    <label class="checkbox-label"><input type="checkbox" name="webappFeatures" value="reports"><span data-i18n="contact.feature_reports">Reporting/analytics</span></label>
+                    <label class="checkbox-label"><input type="checkbox" name="webappFeatures" value="integrations"><span data-i18n="contact.feature_integrations">Third-party integrations</span></label>
+                    <label class="checkbox-label"><input type="checkbox" name="webappFeatures" value="realtime"><span data-i18n="contact.feature_realtime">Real-time updates</span></label>
+                    <label class="checkbox-label"><input type="checkbox" name="webappFeatures" value="files"><span data-i18n="contact.feature_files">File uploads</span></label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- E-commerce Options -->
+              <div class="dynamic-section" id="ecommerceOptions">
+                <div class="form-group">
+                  <label data-i18n="contact.ecommerce_products">Number of products</label>
+                  <select name="ecommerceProducts">
+                    <option value="" data-i18n="contact.select_option">Select an option</option>
+                    <option value="1-20" data-i18n="contact.products_1_20">1-20 products</option>
+                    <option value="21-100" data-i18n="contact.products_21_100">21-100 products</option>
+                    <option value="101-500" data-i18n="contact.products_101_500">101-500 products</option>
+                    <option value="500+" data-i18n="contact.products_500_plus">500+ products</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label data-i18n="contact.ecommerce_platform">Platform preference</label>
+                  <select name="ecommercePlatform">
+                    <option value="" data-i18n="contact.select_option">Select an option</option>
+                    <option value="custom" data-i18n="contact.platform_custom">Custom built</option>
+                    <option value="shopify" data-i18n="contact.platform_shopify">Shopify</option>
+                    <option value="woocommerce" data-i18n="contact.platform_woocommerce">WooCommerce</option>
+                    <option value="no-preference" data-i18n="contact.platform_no_pref">No preference</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label data-i18n="contact.ecommerce_features">Features needed</label>
+                  <div class="checkbox-group">
+                    <label class="checkbox-label"><input type="checkbox" name="ecommerceFeatures" value="inventory"><span data-i18n="contact.feature_inventory">Inventory management</span></label>
+                    <label class="checkbox-label"><input type="checkbox" name="ecommerceFeatures" value="payments"><span data-i18n="contact.feature_multi_payment">Multiple payment methods</span></label>
+                    <label class="checkbox-label"><input type="checkbox" name="ecommerceFeatures" value="shipping"><span data-i18n="contact.feature_shipping">Shipping calculator</span></label>
+                    <label class="checkbox-label"><input type="checkbox" name="ecommerceFeatures" value="discounts"><span data-i18n="contact.feature_discounts">Discount codes</span></label>
+                    <label class="checkbox-label"><input type="checkbox" name="ecommerceFeatures" value="accounts"><span data-i18n="contact.feature_customer_accounts">Customer accounts</span></label>
+                    <label class="checkbox-label"><input type="checkbox" name="ecommerceFeatures" value="reviews"><span data-i18n="contact.feature_reviews">Product reviews</span></label>
+                    <label class="checkbox-label"><input type="checkbox" name="ecommerceFeatures" value="multicurrency"><span data-i18n="contact.feature_multicurrency">Multi-currency</span></label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label data-i18n="contact.ecommerce_content">Product content ready?</label>
+                  <select name="ecommerceContent">
+                    <option value="" data-i18n="contact.select_option">Select an option</option>
+                    <option value="yes" data-i18n="contact.ecom_content_yes">Photos & descriptions ready</option>
+                    <option value="need-help" data-i18n="contact.ecom_content_help">Need help with content</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- AI Integration Options -->
+              <div class="dynamic-section" id="aiOptions">
+                <div class="form-group">
+                  <label data-i18n="contact.ai_usecase">Use case</label>
+                  <select name="aiUsecase">
+                    <option value="" data-i18n="contact.select_option">Select an option</option>
+                    <option value="chatbot" data-i18n="contact.ai_chatbot">Chatbot/assistant</option>
+                    <option value="analysis" data-i18n="contact.ai_analysis">Data analysis</option>
+                    <option value="content" data-i18n="contact.ai_content">Content generation</option>
+                    <option value="automation" data-i18n="contact.ai_automation">Process automation</option>
+                    <option value="other" data-i18n="contact.ai_other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label data-i18n="contact.ai_integration">Integration with existing system?</label>
+                  <select name="aiIntegration">
+                    <option value="" data-i18n="contact.select_option">Select an option</option>
+                    <option value="yes" data-i18n="contact.ai_integrate_yes">Yes, integrate with existing</option>
+                    <option value="no" data-i18n="contact.ai_integrate_no">No, new build</option>
+                    <option value="not-sure" data-i18n="contact.ai_integrate_not_sure">Not sure</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label data-i18n="contact.ai_features">Features needed</label>
+                  <div class="checkbox-group">
+                    <label class="checkbox-label"><input type="checkbox" name="aiFeatures" value="custom-data"><span data-i18n="contact.feature_custom_data">Training on custom data</span></label>
+                    <label class="checkbox-label"><input type="checkbox" name="aiFeatures" value="multilang"><span data-i18n="contact.feature_ai_multilang">Multiple languages</span></label>
+                    <label class="checkbox-label"><input type="checkbox" name="aiFeatures" value="analytics"><span data-i18n="contact.feature_ai_analytics">Analytics/reporting</span></label>
+                  </div>
+                </div>
+              </div>
+
+              <p class="select-project-hint" data-i18n="contact.select_project_hint">Please select a project type above to see relevant options.</p>
+
+              <div class="estimate-display" id="estimateDisplay">
+                <div class="estimate-label" data-i18n="contact.estimated_cost">Estimated Cost</div>
+                <div class="estimate-value">
+                  <span class="estimate-currency">₮</span>
+                  <span class="estimate-amount" id="estimateAmount">0</span>
+                  <span class="estimate-suffix" data-i18n="contact.estimate_starting">+</span>
+                </div>
+                <div class="estimate-note" data-i18n="contact.estimate_note">Final price may vary based on project requirements</div>
+              </div>
+            </div>
+
+            <!-- Step 4: Budget & Timeline -->
+            <div class="form-step" id="step4">
+              <div class="step-header">4. <span data-i18n="contact.step4_title">Budget & Timeline</span></div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="budget" data-i18n="contact.budget">Budget Range</label>
+                  <select id="budget" name="budget">
+                    <option value="" data-i18n="contact.budget_select">Select budget range</option>
+                    <option value="under-2k" data-i18n="contact.budget_1">Under $2,000</option>
+                    <option value="2k-5k" data-i18n="contact.budget_2">$2,000 - $5,000</option>
+                    <option value="5k-10k" data-i18n="contact.budget_3">$5,000 - $10,000</option>
+                    <option value="10k-20k" data-i18n="contact.budget_4">$10,000 - $20,000</option>
+                    <option value="over-20k" data-i18n="contact.budget_5">Over $20,000</option>
+                    <option value="not-sure" data-i18n="contact.budget_6">Not sure yet</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="timeline" data-i18n="contact.timeline">Timeline</label>
+                  <select id="timeline" name="timeline">
+                    <option value="" data-i18n="contact.timeline_select">Select timeline</option>
+                    <option value="urgent" data-i18n="contact.timeline_1">Urgent (within 1 month)</option>
+                    <option value="1-3months" data-i18n="contact.timeline_2">1-3 months</option>
+                    <option value="3-6months" data-i18n="contact.timeline_3">3-6 months</option>
+                    <option value="flexible" data-i18n="contact.timeline_4">Flexible</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label data-i18n="contact.maintenance">Ongoing maintenance needed?</label>
+                <select name="maintenance">
+                  <option value="" data-i18n="contact.select_option">Select an option</option>
+                  <option value="yes" data-i18n="contact.maintenance_yes">Yes</option>
+                  <option value="no" data-i18n="contact.maintenance_no">No</option>
+                  <option value="not-sure" data-i18n="contact.maintenance_not_sure">Not sure yet</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message" data-i18n="contact.message">Tell us about your project</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" data-i18n="contact.submit">Send Quote Request</button>
+          </form>
+
+          <div class="contact-info">
+            <h3 data-i18n="contact.info_title">Contact Information</h3>
+            <div class="contact-info-items">
+              <div class="contact-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <span>+976-99147147</span>
+              </div>
+              <div class="contact-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <span>hello@webico.mn</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Webico. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        <button class="lang-toggle-footer" id="langToggleFooter">
+          <span data-i18n="footer.lang">English</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
