@@ -187,76 +187,45 @@
       e.preventDefault();
 
       const formData = new FormData(form);
-      const projectType = formData.get('projectType');
 
-      // Build data object based on project type
-      const data = {
-        // Contact info
-        name: formData.get('name'),
-        email: formData.get('email'),
-        phone: formData.get('phone'),
-        business: formData.get('business'),
-        // Project type
-        projectType: projectType,
-        // Budget & timeline
-        budget: formData.get('budget'),
-        timeline: formData.get('timeline'),
-        maintenance: formData.get('maintenance'),
-        message: formData.get('message'),
-        timestamp: new Date().toISOString()
-      };
+      try {
+        // Submit to Netlify
+        const response = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(formData).toString()
+        });
 
-      // Add project-specific data
-      if (projectType === 'website') {
-        data.websitePages = formData.get('websitePages');
-        data.websiteDesign = formData.get('websiteDesign');
-        data.websiteFeatures = formData.getAll('websiteFeatures');
-        data.websiteContent = formData.get('websiteContent');
-      } else if (projectType === 'mobile') {
-        data.mobilePlatform = formData.get('mobilePlatform');
-        data.mobileDesign = formData.get('mobileDesign');
-        data.mobileFeatures = formData.getAll('mobileFeatures');
-        data.mobileBackend = formData.get('mobileBackend');
-      } else if (projectType === 'webapp') {
-        data.webappType = formData.get('webappType');
-        data.webappUsers = formData.get('webappUsers');
-        data.webappFeatures = formData.getAll('webappFeatures');
-      } else if (projectType === 'ecommerce') {
-        data.ecommerceProducts = formData.get('ecommerceProducts');
-        data.ecommercePlatform = formData.get('ecommercePlatform');
-        data.ecommerceFeatures = formData.getAll('ecommerceFeatures');
-        data.ecommerceContent = formData.get('ecommerceContent');
-      } else if (projectType === 'ai') {
-        data.aiUsecase = formData.get('aiUsecase');
-        data.aiIntegration = formData.get('aiIntegration');
-        data.aiFeatures = formData.getAll('aiFeatures');
+        if (response.ok) {
+          // Show success message
+          const successMessage = translations?.[currentLang]?.contact?.success ||
+            'Thank you! Your quote request has been sent. We\'ll get back to you soon.';
+
+          // Create or show success element
+          let successEl = form.querySelector('.form-success');
+          if (!successEl) {
+            successEl = document.createElement('div');
+            successEl.className = 'form-success';
+            form.appendChild(successEl);
+          }
+          successEl.textContent = successMessage;
+          successEl.classList.add('show');
+
+          // Reset form and dynamic sections
+          form.reset();
+          resetDynamicSections();
+
+          // Hide success message after 5 seconds
+          setTimeout(() => {
+            successEl.classList.remove('show');
+          }, 5000);
+        } else {
+          throw new Error('Form submission failed');
+        }
+      } catch (error) {
+        console.error('Form submission error:', error);
+        alert('Sorry, there was an error submitting the form. Please try again or contact us directly.');
       }
-
-      // For now, just log the data and show success message
-      console.log('Form submission:', data);
-
-      // Show success message
-      const successMessage = translations?.[currentLang]?.contact?.success ||
-        'Thank you! Your quote request has been sent. We\'ll get back to you soon.';
-
-      // Create or show success element
-      let successEl = form.querySelector('.form-success');
-      if (!successEl) {
-        successEl = document.createElement('div');
-        successEl.className = 'form-success';
-        form.appendChild(successEl);
-      }
-      successEl.textContent = successMessage;
-      successEl.classList.add('show');
-
-      // Reset form and dynamic sections
-      form.reset();
-      resetDynamicSections();
-
-      // Hide success message after 5 seconds
-      setTimeout(() => {
-        successEl.classList.remove('show');
-      }, 5000);
     });
   }
 

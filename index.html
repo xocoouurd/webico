@@ -448,7 +448,12 @@
       <div class="container">
         <h2 class="section-title" data-i18n="contact.headline">Get a Free Quote</h2>
         <div class="contact-content">
-          <form class="contact-form" id="contactForm">
+          <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact">
+            <!-- Honeypot field for spam protection -->
+            <p style="display: none;">
+              <label>Don't fill this out if you're human: <input name="bot-field"></label>
+            </p>
             <!-- Step 1: Contact Info -->
             <div class="form-step" id="step1">
               <div class="step-header">1. <span data-i18n="contact.step1_title">Contact Information</span></div>
