@@ -316,12 +316,13 @@
   // ========================================
   const pricing = {
     // Base prices by project type (in MNT thousands)
+    // null = no estimate shown for this type
     base: {
       website: 500,
-      mobile: 1500,
-      webapp: 1000,
-      ecommerce: 800,
-      ai: 1200
+      mobile: null,
+      webapp: null,
+      ecommerce: 3000,
+      ai: null
     },
     // Website options
     websitePages: { '1-5': 0, '6-10': 200, '11-20': 400, '20+': 800 },
@@ -377,6 +378,14 @@
     if (!projectType) return;
 
     const type = projectType.value;
+    const estimateDisplay = document.getElementById('estimateDisplay');
+
+    // Hide estimate for project types without pricing
+    if (pricing.base[type] === null) {
+      if (estimateDisplay) estimateDisplay.classList.remove('visible');
+      return;
+    }
+
     let total = pricing.base[type] || 0;
 
     // Get active section
@@ -414,7 +423,6 @@
     }
 
     // Update display
-    const estimateDisplay = document.getElementById('estimateDisplay');
     const estimateAmount = document.getElementById('estimateAmount');
 
     if (estimateDisplay && estimateAmount) {

@@ -65,7 +65,9 @@
       "p12_title": "Gala Aluminum Windows",
       "p12_desc": "Construction · React & TypeScript",
       "p13_title": "REHAB Center",
-      "p13_desc": "Healthcare · Next.js & TypeScript"
+      "p13_desc": "Healthcare · Next.js & TypeScript",
+      "p14_title": "Bee Design",
+      "p14_desc": "Print Studio · React & Vite"
     },
     "process": {
       "headline": "How We Work",
@@ -251,7 +253,7 @@
       "contact": "Холбоо барих"
     },
     "hero": {
-      "headline": "Ажиллах вебсайтуудыг бид бүтээнэ",
+      "headline": "Бид найдвартай ажиллагаатай вебсайт бүтээдэг",
       "subheadline": "Өсөн дэвжиж буй бизнесүүдэд зориулсан мэргэжлийн веб болон мобайл шийдлүүд. Хямд үнэ, бодит үр дүн.",
       "cta": "Үнэгүй үнийн санал авах"
     },
@@ -307,7 +309,9 @@
       "p12_title": "Gala Aluminum Windows",
       "p12_desc": "Барилга · React & TypeScript",
       "p13_title": "REHAB Center",
-      "p13_desc": "Эрүүл мэнд · Next.js & TypeScript"
+      "p13_desc": "Эрүүл мэнд · Next.js & TypeScript",
+      "p14_title": "Bee Design",
+      "p14_desc": "Хэвлэлийн студи · React & Vite"
     },
     "process": {
       "headline": "Бид хэрхэн ажилладаг",
