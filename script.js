@@ -197,6 +197,16 @@
         });
 
         if (response.ok) {
+          // Send confirmation email
+          const name = formData.get('name');
+          const email = formData.get('email');
+
+          await fetch('/.netlify/functions/send-confirmation', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, email })
+          }).catch(err => console.error('Confirmation email error:', err));
+
           // Show success message
           const successMessage = translations?.[currentLang]?.contact?.success ||
             'Thank you! Your quote request has been sent. We\'ll get back to you soon.';
