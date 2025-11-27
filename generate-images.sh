@@ -1,6 +1,6 @@
 #!/bin/bash
 
-API_KEY="AIzaSyAGLE8ExmgNRJepuMp870K18aN4pYfBqG4"
+API_KEY="${GEMINI_API_KEY:-YOUR_API_KEY_HERE}"
 MODEL="gemini-2.5-flash-image"
 ASSETS_DIR="./assets"
 

@@ -6,6 +6,7 @@
       "portfolio": "Portfolio",
       "about": "About",
       "faq": "FAQ",
+      "blog": "Blog",
       "contact": "Contact"
     },
     "hero": {
@@ -243,6 +244,16 @@
       "estimate_starting": "+",
       "estimate_note": "Final price may vary based on project requirements"
     },
+    "blog": {
+      "headline": "Blog",
+      "subtitle": "Tips, insights, and guides for growing your business online",
+      "read_more": "Read more →",
+      "article1": {
+        "date": "November 27, 2025",
+        "title": "Why Every Business Needs a Website in 2024",
+        "excerpt": "In today's digital world, having a website isn't optional - it's essential. Learn why your business needs an online presence and how it can help you grow."
+      }
+    },
     "footer": {
       "tagline": "Professional web development for growing businesses.",
       "rights": "All rights reserved.",
@@ -256,6 +267,7 @@
       "portfolio": "Бүтээлүүд",
       "about": "Бидний тухай",
       "faq": "Түгээмэл асуултууд",
+      "blog": "Блог",
       "contact": "Холбоо барих"
     },
     "hero": {
@@ -492,6 +504,16 @@
       "estimated_cost": "Тооцоолсон үнэ",
       "estimate_starting": "+",
       "estimate_note": "Эцсийн үнэ төслийн шаардлагаас хамааран өөрчлөгдөж болно"
+    },
+    "blog": {
+      "headline": "Блог",
+      "subtitle": "Бизнесээ онлайнаар өргөжүүлэх зөвлөмж, мэдлэг, заавар",
+      "read_more": "Цааш унших →",
+      "article1": {
+        "date": "2025 оны 11 сарын 27",
+        "title": "2024 онд яагаад бүх бизнест вебсайт хэрэгтэй вэ",
+        "excerpt": "Өнөөгийн дижитал ертөнцөд вебсайттай байх нь сонголт биш - зайлшгүй шаардлага юм. Таны бизнест яагаад онлайн оролцоо хэрэгтэй, энэ нь өсөн дэвжихэд хэрхэн тусалж чадахыг мэдэж аваарай."
+      }
     },
     "footer": {
       "tagline": "Өсөн дэвжиж буй бизнесүүдэд зориулсан мэргэжлийн веб хөгжүүлэлт.",

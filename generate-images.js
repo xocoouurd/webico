@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const GEMINI_API_KEY = 'AIzaSyAGLE8ExmgNRJepuMp870K18aN4pYfBqG4';
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY || 'YOUR_API_KEY_HERE';
 
 async function generateImage(prompt, filename) {
   console.log(`\nGenerating: ${filename}`);
