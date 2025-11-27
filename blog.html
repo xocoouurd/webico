@@ -1,42 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mn">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Webico Blog - Tips, insights, and guides about web development, mobile apps, and AI for businesses.">
-  <title>Blog - Webico</title>
+
+  <!-- Primary Meta Tags -->
+  <title>Блог - Webico | Веб хөгжүүлэлтийн зөвлөмж</title>
+  <meta name="title" content="Блог - Webico | Веб хөгжүүлэлтийн зөвлөмж">
+  <meta name="description" content="Вебсайт, мобайл апп, AI технологийн талаарх мэдээлэл, зөвлөмж, гарын авлага. Бизнесээ онлайнаар өсгөх арга замууд.">
+  <meta name="keywords" content="веб хөгжүүлэлт блог, вебсайт зөвлөмж, AI prompt, технологи Монгол">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://webico.mn/blog.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://webico.mn/blog.html">
+  <meta property="og:title" content="Блог - Webico">
+  <meta property="og:description" content="Вебсайт, мобайл апп, AI технологийн талаарх мэдээлэл, зөвлөмж, гарын авлага.">
+  <meta property="og:image" content="https://webico.mn/assets/og-image.png">
+  <meta property="og:locale" content="mn_MN">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Блог - Webico">
+  <meta name="twitter:description" content="Вебсайт, мобайл апп, AI технологийн талаарх мэдээлэл, зөвлөмж.">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="assets/logo.png" type="image/png">
 </head>
 <body>
   <!-- Header -->
-  <header class="header" id="header">
-    <div class="container header-content">
-      <a href="index.html" class="logo">
-        <img src="assets/logo.png" alt="Webico" class="logo-img">
-      </a>
-
-      <nav class="nav" id="nav">
-        <a href="index.html#home" class="nav-link" data-i18n="nav.home">Home</a>
-        <a href="index.html#services" class="nav-link" data-i18n="nav.services">Services</a>
-        <a href="index.html#portfolio" class="nav-link" data-i18n="nav.portfolio">Portfolio</a>
-        <a href="blog.html" class="nav-link active" data-i18n="nav.blog">Blog</a>
-        <a href="index.html#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
-      </nav>
-
-      <div class="header-actions">
-        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
-          <span class="lang-current">EN</span>
-        </button>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-          <span class="hamburger"></span>
-        </button>
-      </div>
-    </div>
-  </header>
+  <header class="header" id="header" data-active="blog"></header>
 
   <main>
     <!-- Blog Header -->
@@ -51,16 +53,16 @@
     <section class="blog-section">
       <div class="container">
         <div class="blog-grid">
-          <!-- Article 1 -->
+          <!-- AI Prompt Cheat Sheet -->
           <article class="blog-card">
-            <a href="blog/why-every-business-needs-website-2024.html" class="blog-card-link">
+            <a href="blog/ai-prompt-cheat-sheet.html" class="blog-card-link">
               <div class="blog-card-image">
-                <img src="assets/blog/why-business-needs-website.png" alt="Why Every Business Needs a Website" loading="lazy">
+                <img src="assets/blog/ai-prompt-cheat-sheet.png" alt="AI Prompt Cheat Sheet" loading="lazy">
               </div>
               <div class="blog-card-content">
-                <span class="blog-card-date" data-i18n="blog.article1.date">November 27, 2025</span>
-                <h2 class="blog-card-title" data-i18n="blog.article1.title">Why Every Business Needs a Website in 2024</h2>
-                <p class="blog-card-excerpt" data-i18n="blog.article1.excerpt">In today's digital world, having a website isn't optional - it's essential. Learn why your business needs an online presence and how it can help you grow.</p>
+                <span class="blog-card-date" data-i18n="blog.prompt_cheatsheet.date">November 27, 2025</span>
+                <h2 class="blog-card-title" data-i18n="blog.prompt_cheatsheet.title">AI Prompt Cheat Sheet: A Practical Guide for Office Workers</h2>
+                <p class="blog-card-excerpt" data-i18n="blog.prompt_cheatsheet.excerpt">Learn how to write effective AI prompts with ready-to-use templates for emails, documents, meetings, and more.</p>
                 <span class="blog-card-read-more" data-i18n="blog.read_more">Read more →</span>
               </div>
             </a>
@@ -70,26 +72,9 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <div class="footer-brand">
-        <img src="assets/logo.png" alt="Webico" class="footer-logo">
-        <p class="footer-tagline" data-i18n="footer.tagline">Professional web development for growing businesses.</p>
-      </div>
-      <div class="footer-contact">
-        <p>+976-99147147</p>
-        <p>info@webico.mn</p>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; <span id="currentYear"></span> Webico. <span data-i18n="footer.rights">All rights reserved.</span></p>
-        <button class="lang-toggle-footer" id="langToggleFooter">
-          <span data-i18n="footer.lang">English</span>
-        </button>
-      </div>
-    </div>
-  </footer>
+  <footer class="footer"></footer>
 
+  <script src="components.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

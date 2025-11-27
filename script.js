@@ -13,7 +13,10 @@
 
   async function loadTranslations() {
     try {
-      const response = await fetch('translations.json');
+      // Determine base path based on current page location
+      const isSubdir = window.location.pathname.includes('/blog/');
+      const basePath = isSubdir ? '../' : './';
+      const response = await fetch(basePath + 'translations.json');
       translations = await response.json();
       applyTranslations();
     } catch (error) {
@@ -98,14 +101,9 @@
   // ========================================
   function initLanguageToggle() {
     const langToggle = document.getElementById('langToggle');
-    const langToggleFooter = document.getElementById('langToggleFooter');
 
     if (langToggle) {
       langToggle.addEventListener('click', toggleLanguage);
-    }
-
-    if (langToggleFooter) {
-      langToggleFooter.addEventListener('click', toggleLanguage);
     }
   }
 
@@ -517,10 +515,25 @@
     initCurrentYear();
   }
 
-  // Run on DOM ready
+  // Run after components are ready (or immediately if no components)
+  function startInit() {
+    // Check if components.js is loaded
+    if (document.querySelector('script[src*="components.js"]')) {
+      // Components already loaded, init immediately
+      if (window.componentsLoaded) {
+        init();
+      } else {
+        // Wait for components
+        window.addEventListener('componentsReady', init, { once: true });
+      }
+    } else {
+      init();
+    }
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', startInit);
   } else {
-    init();
+    startInit();
   }
 })();

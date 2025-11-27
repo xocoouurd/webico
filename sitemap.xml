@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://webico.mn/</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="mn" href="https://webico.mn/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webico.mn/"/>
+  </url>
+
+  <!-- Blog Listing -->
+  <url>
+    <loc>https://webico.mn/blog.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog: AI Prompt Cheat Sheet -->
+  <url>
+    <loc>https://webico.mn/blog/ai-prompt-cheat-sheet.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

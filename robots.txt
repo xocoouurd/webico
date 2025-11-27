@@ -1,0 +1,12 @@
+# Robots.txt for webico.mn
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://webico.mn/sitemap.xml
+
+# Disallow internal/private paths
+Disallow: /.env
+Disallow: /node_modules/
+Disallow: /.venv/
