@@ -97,7 +97,13 @@
       "q7": "Do you only work with Mongolian businesses?",
       "a7": "No, we work with clients in Canada and Mongolia.",
       "q8": "What technologies do you use?",
-      "a8": "We use modern, reliable technology - React, cloud services, and proven frameworks. We choose what's best for your project."
+      "a8": "We use modern, reliable technology - React, cloud services, and proven frameworks. We choose what's best for your project.",
+      "q9": "How can AI help my business?",
+      "a9": "AI can automate repetitive tasks, improve customer service with chatbots, analyze data for insights, and generate content. We help you find practical AI solutions that save time and money - no technical expertise required on your end.",
+      "q10": "Do you provide hosting?",
+      "a10": "Yes, we can set up and manage hosting for your website or application. We use reliable cloud services to ensure your site is fast and always online.",
+      "q11": "What payment gateways do you support for e-commerce?",
+      "a11": "For Mongolian e-commerce, we integrate qPay and MinuPay - the most popular local payment solutions. We can also set up international payment options based on your needs."
     },
     "about": {
       "headline": "About Us",
@@ -255,7 +261,7 @@
     "hero": {
       "headline": "Бид найдвартай ажиллагаатай вебсайт бүтээдэг",
       "subheadline": "Өсөн дэвжиж буй бизнесүүдэд зориулсан мэргэжлийн веб болон мобайл шийдлүүд. Хямд үнэ, бодит үр дүн.",
-      "cta": "Үнэгүй үнийн санал авах"
+      "cta": "Үнийн санал авах"
     },
     "services": {
       "headline": "Бид юу хийдэг",
@@ -341,14 +347,20 @@
       "q7": "Та зөвхөн Монголын бизнесүүдтэй ажилладаг уу?",
       "a7": "Үгүй ээ, бид Канад болон Монгол дахь үйлчлүүлэгчидтэй ажилладаг.",
       "q8": "Та ямар технологи ашигладаг вэ?",
-      "a8": "Бид орчин үеийн, найдвартай технологи - React, үүлэн үйлчилгээ болон батлагдсан фрэймворкуудыг ашигладаг. Бид таны төсөлд хамгийн тохиромжтойг сонгодог."
+      "a8": "Бид орчин үеийн, найдвартай технологи - React, үүлэн үйлчилгээ болон батлагдсан фрэймворкуудыг ашигладаг. Бид таны төсөлд хамгийн тохиромжтойг сонгодог.",
+      "q9": "Хиймэл оюун миний бизнест хэрхэн туслах вэ?",
+      "a9": "Хиймэл оюун нь давтагдах ажлуудыг автоматжуулах, чатботоор үйлчлүүлэгчдэд үзүүлэх үйлчилгээг сайжруулах, мэдээллийг шинжлэн ухаарал гаргах, контент үүсгэх боломжтой. Бид танд цаг хугацаа, мөнгөө хэмнэх бодит хиймэл оюун ухааны шийдлийг олоход тусална - таны зүгээс техникийн ямар ч мэдлэг шаардлагагүй.",
+      "q10": "Та хостинг хийдэг үү?",
+      "a10": "Тийм ээ, бид таны вэбсайт эсвэл аппликейшний хостингийг тохируулж, удирдаж чадна. Бид таны сайтыг хурдан, байнга онлайн байлгахын тулд найдвартай үүлэн үйлчилгээг ашигладаг.",
+      "q11": "Та цахим худалдаанд ямар төлбөрийн гарцуудыг дэмждэг вэ?",
+      "a11": "Монголын цахим худалдааны хувьд бид хамгийн алдартай дотоодын төлбөрийн шийдэл болох qPay болон MinuPay-г нэгтгэдэг. Мөн таны хэрэгцээнд тулгуурлан олон улсын төлбөрийн сонголтыг тохируулж болно."
     },
     "about": {
       "headline": "Бидний тухай",
       "desc": "Бид вебсайт болон аппликейшн бүтээх 15 гаруй жилийн туршлагатай програм хангамж хөгжүүлэлтийн баг юм. Бид Монгол, Канад дахь жижиг бизнесүүдтэй хамтран ажиллаж, бодитоор ажиллах шийдлүүдийг хүргэдэг. Ямар ч корпорацийн утгагүй зүйл, хэт үнэтэй багц байхгүй - зүгээр л боломжийн үнээр бат бөх хөгжүүлэлт. Канад улсад байрладаг, Монгол улстай хамтран ажилладаг."
     },
     "contact": {
-      "headline": "Үнэгүй үнийн санал авах",
+      "headline": "Үнийн санал авах",
       "step1_title": "Холбоо барих мэдээлэл",
       "step2_title": "Төслийн төрөл",
       "step3_title": "Төслийн дэлгэрэнгүй",
