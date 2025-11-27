@@ -68,7 +68,8 @@
       "p13_title": "REHAB Center",
       "p13_desc": "Healthcare · Next.js & TypeScript",
       "p14_title": "Bee Design",
-      "p14_desc": "Print Studio · React & Vite"
+      "p14_desc": "Print Studio · React & Vite",
+      "in_development": "In Development"
     },
     "process": {
       "headline": "How We Work",
@@ -378,7 +379,8 @@
       "p13_title": "REHAB Center",
       "p13_desc": "Эрүүл мэнд · Next.js & TypeScript",
       "p14_title": "Bee Design",
-      "p14_desc": "Хэвлэлийн студи · React & Vite"
+      "p14_desc": "Хэвлэлийн студи · React & Vite",
+      "in_development": "Хөгжүүлж байна"
     },
     "process": {
       "headline": "Бид хэрхэн ажилладаг",
