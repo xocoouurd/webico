@@ -157,8 +157,8 @@ h1, h2, h3, h4 {
 }
 
 .logo-img {
-  width: 160px;
-  height: 160px;
+  height: 48px;
+  width: auto;
   object-fit: contain;
 }
 
@@ -729,6 +729,29 @@ h1, h2, h3, h4 {
   flex-shrink: 0;
 }
 
+.contact-social {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-left: var(--spacing-sm);
+}
+
+.contact-social a {
+  color: #2563eb;
+  transition: color var(--transition);
+  display: flex;
+  align-items: center;
+}
+
+.contact-social a:hover {
+  color: #1d4ed8;
+}
+
+.contact-social svg {
+  width: 24px;
+  height: 24px;
+}
+
 /* Form Success/Error States */
 .form-success {
   background: #d1fae5;
@@ -961,6 +984,26 @@ h1, h2, h3, h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.footer-social {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.footer-social a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: color var(--transition);
+}
+
+.footer-social a:hover {
+  color: white;
+}
+
+.footer-social svg {
+  width: 28px;
+  height: 28px;
 }
 
 .footer-bottom {
